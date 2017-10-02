@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="MyAUT_Suite" verbose="2" parallel="methods" thread-count="1">
+
+ <listeners>
+	<listener class-name="utils.ExtentReportListener"></listener>
+ </listeners>
+
+ <test name="Sanity">
+    <packages>
+      <package name="test" />
+   </packages>
+ </test>
+ 
+</suite>
